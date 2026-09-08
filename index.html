@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>GC GF PDF 在线图书馆</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- 顶部导航栏 -->
+
+  <header class="header">
+
+    <div class="logo">
+
+      <div class="logo-icon">📚</div>
+
+      <div>
+
+        <h1>GC GF PDF 在线图书馆</h1>
+
+        <p>Online PDF Library</p>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- 主体 -->
+
+  <main class="container">
+
+
+    <!-- 左侧图书列表 -->
+
+    <aside class="sidebar">
+
+      <h2>📖 文献目录</h2>
+
+      <div class="book-list">
+
+
+        <button
+          class="book active"
+          data-pdf="https://github.com/agiedu/gcgf/releases/download/v1.0.0/2021.pdf"
+          data-title="2021一建市政教材"
+        >
+
+          <span class="book-icon">📕</span>
+
+          <span>
+
+            <strong>2021一建市政教材</strong>
+
+            <small>高清电子版 PDF</small>
+
+          </span>
+
+        </button>
+
+
+      </div>
+
+    </aside>
+
+
+    <!-- PDF 阅读区域 -->
+
+    <section class="reader-section">
+
+
+      <div class="reader-header">
+
+        <div>
+
+          <h2 id="bookTitle">
+            2021一建市政教材
+          </h2>
+
+          <p id="status">
+            正在准备加载 PDF...
+          </p>
+
+        </div>
+
+
+        <div class="reader-buttons">
+
+          <button id="fullscreenBtn">
+
+            ⛶ 全屏阅读
+
+          </button>
+
+
+          <a
+            id="downloadBtn"
+            href="https://github.com/agiedu/gcgf/releases/download/v1.0.0/2021.pdf"
+            target="_blank"
+          >
+
+            ⬇ 下载 PDF
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PDF.js 阅读器 -->
+
+      <div class="pdf-container">
+
+        <iframe
+          id="pdfViewer"
+          title="PDF 在线阅读器"
+        ></iframe>
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
